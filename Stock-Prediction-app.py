@@ -13,9 +13,9 @@ TODAY = date.today().strftime("%Y-%m-%d")  #Until today
 
 
 st.title('Stock Prediction:')   #Title of our web-app
-st.write('(Tesla , Google , Microsoft, Facebook , Nvidia , Paypal , Adobe , Netflix)')
+st.write('(Nifty,S&P,N100,Tesla , Google , Microsoft, Facebook , Nvidia , Paypal , Adobe , Netflix)')
 
-stocks = ('TSLA','GOOG','MSFT','FB','AAPL','NVDA','PYPL','ADBE','NFLX')  #Stocks we are using to predict
+stocks = ('^NSEI','^GSPC','^NDX','TSLA','GOOG','MSFT','FB','AAPL','NVDA','PYPL','ADBE','NFLX')  #Stocks we are using to predict
 
 selected_stocks = st.selectbox('Select Dataset for prediction',stocks)   
 
